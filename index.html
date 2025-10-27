@@ -95,13 +95,13 @@
         // performance, uncomment the following line:
         // config.devicePixelRatio = 1;
 
-		 canvas.style.width = window.innerWidth + 'px';
+		canvas.style.width = window.innerWidth + 'px';
         canvas.style.height = window.innerHeight + 'px';
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "100%";
-        canvas.style.height = "100%";
+			canvas.style.width = "100%";
+			canvas.style.height = "100%";
       }
 
       loadingBar.style.display = "block";
@@ -114,7 +114,7 @@
               }).then((unityInstance) => {
                 loadingBar.style.display = "none";
                 //fullscreenButton.onclick = () => {
-                 // unityInstance.SetFullscreen(1);
+                  //unityInstance.SetFullscreen(1);
                 //};
               }).catch((message) => {
                 alert(message);
